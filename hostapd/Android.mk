@@ -20,6 +20,7 @@ include $(LOCAL_PATH)/android.config
 L_CFLAGS = -DWPA_IGNORE_CONFIG_ERRORS
 
 L_CFLAGS += -DVERSION_STR_POSTFIX=\"-$(PLATFORM_VERSION)\"
+L_CFLAGS += -Os
 
 # Set Android log name
 L_CFLAGS += -DANDROID_LOG_NAME=\"hostapd\"
